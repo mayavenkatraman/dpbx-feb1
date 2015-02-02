@@ -1,5 +1,5 @@
 //
-//  TermsViewController.swift
+//  settingsViewController.swift
 //  dpbx-feb1
 //
 //  Created by Maya Venkatraman on 2/1/15.
@@ -8,16 +8,16 @@
 
 import UIKit
 
-class TermsViewController: UIViewController {
+class settingsViewController: UIViewController {
 
-    
-    
-    
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+scrollView.contentSize = imageView.image!.size
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

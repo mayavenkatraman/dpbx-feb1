@@ -852,20 +852,30 @@
         <!--Settings-->
         <scene sceneID="7RJ-Cu-Hol">
             <objects>
-                <viewController id="HC7-po-VSi" sceneMemberID="viewController">
+                <viewController id="HC7-po-VSi" customClass="settingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ze1-fE-ljN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="SgY-VY-2cC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kLg-77-nnb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="qML-FV-hgG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="KMj-bX-Kn0"/>
                     <navigationItem key="navigationItem" id="5vn-49-XHP"/>
+                    <connections>
+                        <outlet property="imageView" destination="qML-FV-hgG" id="ZeW-dX-i2T"/>
+                        <outlet property="scrollView" destination="kLg-77-nnb" id="dhl-ZX-Vug"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lg3-zq-uDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
