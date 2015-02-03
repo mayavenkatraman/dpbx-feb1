@@ -1,18 +1,15 @@
 //
-//  TermsViewController.swift
+//  termsViewController.swift
 //  dpbx-feb1
 //
-//  Created by Maya Venkatraman on 2/1/15.
+//  Created by Maya Venkatraman on 2/2/15.
 //  Copyright (c) 2015 Maya Venkatraman. All rights reserved.
 //
 
 import UIKit
 
-class TermsViewController: UIViewController {
+class termsViewController: UIViewController {
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,6 +21,10 @@ class TermsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func didPressDoneButton(sender: AnyObject) {
+    
+    dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation
